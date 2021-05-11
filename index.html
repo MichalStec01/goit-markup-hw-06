@@ -305,7 +305,7 @@
             </div>
             <div class="footer-form">
                 <span class="input-label">zapisz się do newslettera</span>
-                <form class="form-newsletter" name="newsletter">
+                <form class="form-newsletter" name="newsletter" action="" method="POST">
                     <label class="newsletter-label" name="newsletter-title">
                         <input class="input-email" type="email" name="email" placeholder="E-mail" />
                     </label>
@@ -325,6 +325,31 @@
                     <use href="./images/icons.svg#icon-Vector"></use>
                 </svg>
             </button>
+            <form action="" method="POST" class="modal-form">
+                <span class="modal-form-title">Zostaw swoje dane w formularzu poniżej</span>
+                <label for="name" class="modal-label">Imie</label>
+                <svg class="modal-icon1">
+                    <use href="./images/icons.svg#icon-modalicon1"></use>
+                </svg>
+                <input id="name" name="name" class="modal-input" type="text" />
+                <label for="phone" class="modal-label">Telefon</label>
+                <svg class="modal-icon2">
+                    <use href="./images/icons.svg#icon-modalicon2"></use>
+                </svg>
+                <input id="phone" name="phone" class="modal-input" type="tel" />
+                <label for="email" class="modal-label">Email</label>
+                <svg class="modal-icon3">
+                    <use href="./images/icons.svg#icon-modalicon3"></use>
+                </svg>
+                <input id="email" name="email" class="modal-input" type="email" />
+                <label for="textarea" class="modal-label">Komentarz</label>
+                <textarea id="textarea" name="textarea" class="modal-textarea" placeholder="Wprowadź tekst"></textarea>
+                <label class="modal-checkbox-label">
+                <input id="checkbox" name="checkbox" class="modal-checkbox" type="checkbox" />
+                Oświadczam iż akceptuję&nbsp;<a href="#" class="checkbox-link">Regulamin</a>&nbsp;i&nbsp;<a href="#" class="checkbox-link">Politykę Prywatności</a>.
+                </label>
+                <button class="btn-modal-form" type="submit">Wyślij</button>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
